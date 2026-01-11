@@ -66,6 +66,10 @@ public class Network {
     if (u1 == null || u2 == null) {
         return false;
     }
+
+    if (name1.equals(name2)) {
+        return false;
+    }
         return u1.addFollowee(name2);
     }
     
